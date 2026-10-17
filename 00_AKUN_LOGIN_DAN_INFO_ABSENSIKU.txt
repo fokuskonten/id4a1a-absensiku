@@ -1,0 +1,31 @@
+================================================================================
+INFORMASI AKUN LOGIN & PANDUAN PENGGUNAAN RESMI
+Aplikasi   : AbsensiKu (Aplikasi Presensi Siswa Online Dan Rekap Kehadiran Sekolah)
+SKU        : ID4A1A
+Penerbit   : FokusKonten Official (https://fokuskonten.my.id)
+Bantuan WA : +62 851-8301-1318
+================================================================================
+
+1. CARA MENJALANKAN APLIKASI
+--------------------------------------------------------------------------------
+- Pemasangan Baru  : Dobel-klik 'SETUP_OTOMATIS.bat'
+- Buka Aplikasi    : Dobel-klik 'BUKA_APLIKASI.bat'
+- Akses Peramban   : http://localhost/absensiku/
+
+2. KREDENSIAL AKUN LOGIN RESMI
+--------------------------------------------------------------------------------
+Akun [1]:
+   - Username / User : admin
+   - Password / Sandi: admin (atau admin123)
+
+Akun [2]:
+   - Username / User : admin
+   - Password / Sandi: admin (atau siswa_2024002)
+
+3. KONEKSI BASIS DATA (DATABASE)
+--------------------------------------------------------------------------------
+- Database : absensi_siswa
+- Host     : 127.0.0.1 (Port: 3306)
+- User     : root
+- Password : (Kosong/Tanpa password)
+================================================================================
