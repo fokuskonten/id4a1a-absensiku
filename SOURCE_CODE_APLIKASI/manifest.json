@@ -1,0 +1,26 @@
+{
+  "name": "AbsensiKu - Aplikasi Presensi Siswa Online Dan Rekap Kehadiran Sekolah",
+  "short_name": "AbsensiKu",
+  "description": "Aplikasi Presensi Siswa Online Dan Rekap Kehadiran Sekolah Resmi FokusKonten",
+  "start_url": "/absensiku/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/absensiku/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/absensiku/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/absensiku/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

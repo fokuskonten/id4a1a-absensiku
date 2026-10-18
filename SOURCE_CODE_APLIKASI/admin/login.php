@@ -76,7 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon.png">
+    <link rel="manifest" href="../manifest.json">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -159,8 +162,7 @@ body {
     <div class="max-w-md w-full mx-4 relative z-10">
         <!-- Logo & Title -->
         <div class="text-center mb-8">
-            <img src="../assets/default/logo.png" alt="AbsensiKu"
-                class="h-24 mx-auto mb-4 drop-shadow-[0_0_15px_rgba(147,51,234,0.5)]">
+            <img src="../assets/default/logo.png" alt="AbsensiKu" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-purple-500/50 shadow-lg">
             <h2 class="text-3xl font-bold text-white mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
                 Login Admin
             </h2>
@@ -182,7 +184,7 @@ body {
                         <label class="text-gray-300 text-sm font-medium mb-2 block opacity-90">
                             <i class="fas fa-user text-purple-500 mr-2"></i>Username
                         </label>
-                        <input type="text" name="username" required
+                        <input type="text" name="username" required autocomplete="username" autofocus
                             class="w-full px-5 py-4 rounded-lg bg-gray-800/80 border border-purple-500/30 text-white 
                             focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 
                             transition-all duration-300 placeholder-gray-500"
@@ -194,7 +196,7 @@ body {
                             <i class="fas fa-lock text-purple-500 mr-2"></i>Password
                         </label>
                         <div class="relative">
-                            <input type="password" name="password" required id="password"
+                            <input type="password" name="password" required autocomplete="current-password" id="password"
                                 class="w-full px-5 py-4 rounded-lg bg-gray-800/80 border border-purple-500/30 text-white 
                                 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20
                                 transition-all duration-300 placeholder-gray-500"
@@ -208,6 +210,11 @@ body {
                     </div>
                 </div>
 
+                
+                <div class="p-3 bg-purple-950/40 border border-purple-500/30 rounded-lg text-xs text-center flex items-center justify-between">
+                    <span class="text-purple-300">Akun: <strong class="text-white">admin</strong> / <strong class="text-white">admin</strong></span>
+                    <button type="button" id="btn-quick-fill-admin" onclick="document.querySelector('input[name=username]').value='admin'; document.getElementById('password').value='admin';" class="px-2.5 py-1 bg-purple-600/40 hover:bg-purple-600 text-purple-200 hover:text-white rounded font-medium transition-colors">Isi Cepat</button>
+                </div>
                 <button type="submit"
                     class="w-full bg-gradient-to-r from-purple-600 to-purple-800 text-white font-medium py-4 px-4 
                     rounded-lg transition duration-300 hover:opacity-90 transform hover:-translate-y-0.5

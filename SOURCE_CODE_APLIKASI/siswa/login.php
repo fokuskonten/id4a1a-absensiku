@@ -65,7 +65,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon.png">
+    <link rel="manifest" href="../manifest.json">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -187,8 +190,7 @@ body {
         <!-- Login Card -->
         <div class="mb-8 text-center">
             <!-- School Logo -->
-            <img src="../assets/default/logo.png" alt="AbsensiKu"
-                class="h-24 mx-auto drop-shadow-lg">
+            <img src="../assets/default/logo.png" alt="AbsensiKu" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-2 border-sky-500/50 shadow-lg">
 
             <!-- Animated Badge -->
             <div class="inline-block mt-4 mb-2 animated-gradient text-white py-1 px-4 rounded-full text-xs font-medium tracking-wider">
@@ -240,6 +242,11 @@ body {
                     <p class="mt-2 text-xs text-gray-500">Default password: siswa_[NIS]</p>
                 </div>
 
+                
+                <div class="p-3 bg-sky-950/40 border border-sky-500/30 rounded-lg text-xs text-center flex items-center justify-between">
+                    <span class="text-sky-300">Akun Siswa: <strong class="text-white">2024002</strong> / <strong class="text-white">admin</strong></span>
+                    <button type="button" id="btn-quick-fill-siswa" onclick="document.querySelector('input[name=nis]').value='2024002'; document.getElementById('password').value='admin';" class="px-2.5 py-1 bg-sky-600/40 hover:bg-sky-600 text-sky-200 hover:text-white rounded font-medium transition-colors">Isi Cepat</button>
+                </div>
                 <button type="submit"
                     class="w-full login-btn text-white font-medium py-3 px-4 rounded-lg
                     focus:outline-none focus:ring-2 focus:ring-purple-500/30 flex items-center justify-center

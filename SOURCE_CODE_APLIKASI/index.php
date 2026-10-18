@@ -10,6 +10,9 @@ ini_set('display_errors', '0');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AbsensiKu - Aplikasi Presensi Siswa Online & Rekap Kehadiran Sekolah</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,6 +28,7 @@ ini_set('display_errors', '0');
 <body class="flex flex-col justify-between items-center p-6 md:p-12">
   <div class="w-full max-w-4xl mx-auto flex flex-col items-center text-center my-auto">
     <!-- Header Badge -->
+    <img src="logo.png" alt="AbsensiKu" class="w-20 h-20 rounded-full object-cover mb-4 shadow-xl border-2 border-indigo-500/40 mx-auto">
     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-6">
       <i class="fa-solid fa-school"></i> Sistem Presensi & Rekap Kehadiran Sekolah
     </div>
